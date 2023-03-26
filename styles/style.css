@@ -1,0 +1,241 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.heading {
+     display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 8vh;
+    background-color: rgb(17, 24, 39);
+}
+
+.hamburger-menu img {
+    width: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    /* width: 25vw; */
+    margin-right: 3rem;
+    color: white;   
+    align-items: center;
+    /* justify-content: right; */
+}
+.hamburger-menu{
+    display: none;
+}
+.navbar ul li {
+    font-size: 20px; 
+    margin-right: 2rem;
+}
+
+.navbar ul #home a {
+    background-color: rgb(100, 100, 224);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(17, 24, 39);
+}
+
+/* MAIN SECTION CSS */
+
+.main-section {
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.left-section {
+    padding-right: 20px;
+    position: relative;
+    line-height: 1.2;
+    color: white;
+}
+
+.left-section img {
+    width: 40px;
+    position: absolute;
+}
+
+.left-section h3 {
+    font-size: 35px;
+}
+
+.left-section h1 {
+    font-size: 55px;
+}
+
+.right-section img {
+    width: 30vw;
+}
+
+.wave {
+    margin-left: 3rem;
+}
+
+.developer {
+    margin-top: 1rem;
+    color: rgb(182, 175, 77);
+}
+
+/* PROJECT SECTION CSS */
+.project-heading {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.project-section h1 {
+    font-size: 40px;
+    color: white;
+    margin-top: 5rem;
+}
+
+.horizontal-line {
+    height: 10px;
+    width: 138px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-image-row{
+    max-width: 48vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.project-image-box {
+    /* width: 40%; */
+    margin: 10px;
+}
+
+.project-image-box p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.project-image-row img {
+    width: 18rem;
+    margin: 10px;
+}
+
+/* CONTACT SECTION CSS */
+.contact-section-heading {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-section-heading h1 {
+    font-size: 40px;
+    color: white;
+    margin-top: 5rem;
+}
+
+.contact-horizontal-line {
+    height: 10px;
+    width: 138px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+} 
+.contact-section ul li a img{
+    width: 30px; 
+    margin: 10px;
+} 
+.contact-section{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+} 
+.contact-section ul{
+    display: flex; 
+    align-items: center;
+}  
+ 
+/* RESPONSIVE CSS */ 
+
+@media screen and (max-width:764px){ 
+
+    /* HEADING CSS */
+    .hamburger-menu{
+        display: block; 
+        margin-left: 2rem;
+    }  
+    .heading{
+        justify-content: left;
+    }
+    .navbar{
+        display: none;
+    }  
+    /* MAIN SECTION */
+    .main-section{
+        flex-direction: column; 
+        margin-top: 2rem; 
+        gap: 10px; 
+        width: 90vw;
+    }  
+    .right-section img{
+        width: 20rem;
+    } 
+    .left-section{
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+    .left-section h3 {
+        font-size: 30px;
+    }
+    
+    .left-section h1 {
+        font-size: 45px;
+    } 
+    .wave {
+        margin-left: 0;
+    } 
+    .left-section img {
+        width: 40px;
+        position: static;
+    }
+    /* PROJECT SECTION */
+    .project-image-row{
+        flex-direction: column; 
+        align-items: center;
+    }   
+} 
+@media screen and (max-width:400px){
+    .left-section h3 {
+        font-size: 25px;
+    }
+    
+    .left-section h1 {
+        font-size: 35px;
+    }
+}
